@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS App</title>
+</head>
+<body> 
+
+    <section class="post-area">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="user-post-area">
+                                <img id="user_profile" src="../src/profile.jpg" alt="">
+                                <button data-bs-toggle="modal" data-bs-target="#post-container">What's on your mind, Abu Sufian?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-area">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div id="post-timeline-load" class="col-md-5">
+
+                    <!-- post-timeline-area -->
+                    <!-- <div class="card shadow-sm my-3">
+                        <div class="card-body">
+                            <div class="post-timeline-info">
+                                <div class="user-info">
+                                    <img src="https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-1/274863168_10209092156977669_494193810531286296_n.jpg?stp=dst-jpg_s320x320&_nc_cat=103&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeGBkUfrlIsba8wkQsnVnTFon5hac0M9mUWfmFpzQz2ZRTTIpm_pY83CdOHerSUcKV8&_nc_ohc=vfCN56j-6wYAX8sfIHE&_nc_ht=scontent.fdac80-1.fna&oh=00_AT_QzMYfVZpgUNuH0Z1lufo_fENVOGIPuOSePkGBu24J3A&oe=624A606E" alt="">
+                                    <h5>Abu Sufian</h5>
+                                </div>
+                                <button>...</button>
+                            </div>
+                            <div class="user-post-content">
+                                <p>আমাদের অনলাইন ব্যাচে এরই মধ্যে লাইভ ৫০০টি ক্লাস সম্পন্ন হয়েছে। নিঃসন্দেহে এটি আমাদের জন্যে একটি বিশাল অর্জন। 😇
+                                    ৫ম-১১শ শ্রেণির শিক্ষার্থীদের জন্যে টেন মিনিট স্কুল অ্যাপে বিজ্ঞান ও গণিতের সিলেবাসভিত্তিক লাইভ ক্লাসের আয়োজন করেছি আমরা। 👨‍🏫
+                                    এরই মধ্যে আমাদের সাথে প্রায় ৪,০০০ এরও বেশি শিক্ষার্থী একসাথে ক্লাসগুলো করছে। 🔥
+                                    শুভকামনা রইল তোমাদের প্রতি! 😃</p>
+                                <img class="w-100" src="https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-6/277528578_2349580825195619_4505440489819140247_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGeDbZH_-nc3lvd2ptYvpfLhRbb8BIRS6CFFtvwEhFLoOWpdbosG13KWALI9G7vzUE&_nc_ohc=IOVRt77NeyIAX_fuAHM&_nc_ht=scontent.fdac80-1.fna&oh=00_AT_id7UpecNd5e-5PUM-clw1yC90aZW8bc-wW8tthgvo6w&oe=62494387" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="post-container">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4>Create a post</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="msg"></div>
+                    <form action="" id="creat-post-form" method="POST">
+    
+                        <div class="my-2">
+                            <input name="name" type="text" class="form-control" placeholder="Auth Name">
+                        </div>
+                        <div class="my-2">
+                            <input name="user_photo" type="text" class="form-control" placeholder="Auth Photo">
+                        </div>
+                        <div class="my-2">
+                            <textarea name="content" id="" cols="30" rows="5" class="form-control" placeholder="What's on your mind, Abu Sufian?"></textarea>
+                        </div>
+                        <div class="my-2">
+                            <input name="photo" type="text" class="form-control" placeholder="Timeline Photo">
+                        </div>
+                        <div class="my-2">
+                            <input type="submit" class="btn btn-primary w-100" value="Post">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>
